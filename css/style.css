@@ -7,6 +7,12 @@ h1 {
     color: #F0F;
 }
 
+nav a {
+  animation: 2s infinite rotateForever ;
+  display: block;
+  width: fit-content;
+}
+
 blink {
   -webkit-animation: 2s linear infinite condemed_blink_effect; // pour Safari 4.0-8.0
   animation: 2s linear infinite condemed_blink_effect;
@@ -31,5 +37,15 @@ blink {
   }
   100% {
     visibility: visible;
+  }
+}
+
+@keyframes rotateForever {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(359deg);
   }
 }
